@@ -32,6 +32,8 @@
   --color-rose-deep: var(--rose-deep);
   --color-beige: var(--beige);
   --color-cream: var(--cream);
+  --color-gold: var(--gold);
+  --color-gold-deep: var(--gold-deep);
   --font-display: "Cormorant Garamond", Georgia, serif;
   --font-sans: "Jost", "Inter", system-ui, sans-serif;
 }
@@ -63,6 +65,8 @@
   --rose-deep: oklch(0.55 0.08 15);
   --beige: oklch(0.9 0.025 70);
   --cream: oklch(0.97 0.012 70);
+  --gold: oklch(0.78 0.09 85);
+  --gold-deep: oklch(0.66 0.1 80);
 }
 
 @layer base {

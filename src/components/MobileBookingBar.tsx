@@ -9,7 +9,7 @@ export function MobileBookingBar() {
         className="flex w-full items-center justify-center gap-2 rounded-full bg-primary px-5 py-3.5 text-sm font-medium tracking-wide text-primary-foreground"
       >
         <CalendarHeart size={18} />
-        Prenota il tuo trattamento
+        Prenota ora
       </Link>
     </div>
   );

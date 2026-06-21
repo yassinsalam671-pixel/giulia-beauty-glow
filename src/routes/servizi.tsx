@@ -9,10 +9,10 @@ import { Reveal } from "@/components/Reveal";
 export const Route = createFileRoute("/servizi")({
   head: () => ({
     meta: [
-      { title: "Servizi e trattamenti — Beauty Center Giulia Brescia" },
-      { name: "description", content: "Tutti i trattamenti del Beauty Center Giulia: viso, corpo, unghie e sopracciglia. Estetica professionale a Brescia." },
-      { property: "og:title", content: "Servizi e trattamenti — Beauty Center Giulia" },
-      { property: "og:description", content: "Trattamenti viso, corpo, unghie e sopracciglia a Brescia." },
+      { title: "Servizi e trattamenti — You Beauty Lab Brescia" },
+      { name: "description", content: "Tutti i trattamenti di You Beauty Lab: pulizia viso, massaggi, epilazione, trattamenti corpo, nail art e sopracciglia a Brescia." },
+      { property: "og:title", content: "Servizi e trattamenti — You Beauty Lab" },
+      { property: "og:description", content: "Pulizia viso, massaggi, epilazione, corpo, nail art e sopracciglia a Brescia." },
       { property: "og:image", content: facialImg },
     ],
   }),
@@ -21,7 +21,7 @@ export const Route = createFileRoute("/servizi")({
 
 const sections = [
   {
-    title: "Trattamenti viso",
+    title: "Pulizia viso",
     img: facialImg,
     intro: "Protocolli su misura per restituire luminosità, idratazione ed elasticità alla pelle.",
     items: [
@@ -32,25 +32,49 @@ const sections = [
     ],
   },
   {
-    title: "Trattamenti corpo",
+    title: "Massaggi",
     img: bodyImg,
-    intro: "Massaggi e rituali pensati per rilassare, modellare e lasciarti rigenerata.",
+    intro: "Massaggi pensati per rilassare la mente e sciogliere le tensioni del corpo.",
     items: [
       { name: "Massaggio rilassante", price: "€ 65", time: "50 min" },
+      { name: "Decontratturante", price: "€ 70", time: "50 min" },
       { name: "Linfodrenante", price: "€ 75", time: "60 min" },
       { name: "Rituale sensoriale", price: "€ 110", time: "90 min" },
-      { name: "Scrub corpo", price: "€ 55", time: "40 min" },
     ],
   },
   {
-    title: "Unghie",
+    title: "Epilazione",
+    img: browsImg,
+    intro: "Tecniche delicate ed efficaci per una pelle sempre liscia e curata.",
+    items: [
+      { name: "Gambe complete", price: "€ 25", time: "30 min" },
+      { name: "Mezza gamba", price: "€ 15", time: "20 min" },
+      { name: "Inguine totale", price: "€ 18", time: "20 min" },
+      { name: "Ascelle", price: "€ 10", time: "15 min" },
+      { name: "Baffetti / sopracciglia", price: "€ 8", time: "10 min" },
+    ],
+  },
+  {
+    title: "Trattamenti corpo",
+    img: bodyImg,
+    intro: "Rituali modellanti, drenanti e rigeneranti per ritrovare l'armonia.",
+    items: [
+      { name: "Scrub corpo", price: "€ 55", time: "40 min" },
+      { name: "Trattamento drenante", price: "€ 80", time: "60 min" },
+      { name: "Anticellulite", price: "€ 85", time: "60 min" },
+      { name: "Bendaggi tonificanti", price: "€ 70", time: "50 min" },
+    ],
+  },
+  {
+    title: "Nail art",
     img: nailsImg,
-    intro: "Mani e piedi curati nel dettaglio, con finiture impeccabili.",
+    intro: "Mani e piedi curati nel dettaglio, con finiture impeccabili e design creativi.",
     items: [
       { name: "Manicure classica", price: "€ 25", time: "30 min" },
       { name: "Semipermanente", price: "€ 35", time: "45 min" },
       { name: "Ricostruzione gel", price: "€ 55", time: "90 min" },
       { name: "Pedicure estetica", price: "€ 40", time: "50 min" },
+      { name: "Nail art decorazioni", price: "da € 5", time: "—" },
     ],
   },
   {

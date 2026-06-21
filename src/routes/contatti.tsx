@@ -5,18 +5,18 @@ import { Reveal } from "@/components/Reveal";
 export const Route = createFileRoute("/contatti")({
   head: () => ({
     meta: [
-      { title: "Contatti e prenotazioni — Beauty Center Giulia Brescia" },
-      { name: "description", content: "Prenota il tuo trattamento al Beauty Center Giulia. Via Trieste 14, Brescia. Telefono +39 030 123 4567." },
-      { property: "og:title", content: "Contatti — Beauty Center Giulia" },
-      { property: "og:description", content: "Prenota: Via Trieste 14, Brescia · +39 030 123 4567." },
+      { title: "Contatti e prenotazioni — You Beauty Lab Brescia" },
+      { name: "description", content: "Prenota il tuo trattamento da You Beauty Lab a Brescia. Telefono +39 391 398 5198." },
+      { property: "og:title", content: "Contatti — You Beauty Lab" },
+      { property: "og:description", content: "Brescia · +39 391 398 5198." },
     ],
   }),
   component: ContattiPage,
 });
 
-const ADDRESS = "Via Trieste 14, 25121 Brescia";
-const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("Beauty Center Giulia, " + ADDRESS)}`;
-const MAPS_EMBED = `https://www.google.com/maps?q=${encodeURIComponent(ADDRESS)}&output=embed`;
+const ADDRESS = "Brescia (BS)";
+const MAPS_URL = `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent("You Beauty Lab Brescia")}`;
+const MAPS_EMBED = `https://www.google.com/maps?q=${encodeURIComponent("centro estetico Brescia")}&output=embed`;
 
 function ContattiPage() {
   return (
@@ -42,10 +42,10 @@ function ContattiPage() {
               </a>
             </ContactRow>
             <ContactRow icon={Phone} title="Telefono">
-              <a href="tel:+390301234567" className="hover:text-[var(--rose-deep)]">+39 030 123 4567</a>
+              <a href="tel:+393913985198" className="hover:text-[var(--rose-deep)]">+39 391 398 5198</a>
             </ContactRow>
             <ContactRow icon={Mail} title="Email">
-              <a href="mailto:info@beautycentergiulia.it" className="hover:text-[var(--rose-deep)]">info@beautycentergiulia.it</a>
+              <a href="mailto:info@youbeautylab.it" className="hover:text-[var(--rose-deep)]">info@youbeautylab.it</a>
             </ContactRow>
             <ContactRow icon={Clock} title="Orari">
               Mar – Ven: 9.30 – 19.30
@@ -55,7 +55,7 @@ function ContattiPage() {
               Dom & Lun: chiuso
             </ContactRow>
             <ContactRow icon={Instagram} title="Seguici">
-              <a href="#" className="hover:text-[var(--rose-deep)]">@beautycenter.giulia</a>
+              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-[var(--rose-deep)]">@youbeautylab</a>
             </ContactRow>
           </div>
         </Reveal>
@@ -69,7 +69,7 @@ function ContattiPage() {
               const body = encodeURIComponent(
                 `Nome: ${data.get("name")}\nTelefono: ${data.get("phone")}\nTrattamento: ${data.get("service")}\n\nMessaggio:\n${data.get("message")}`,
               );
-              window.location.href = `mailto:info@beautycentergiulia.it?subject=${subject}&body=${body}`;
+              window.location.href = `mailto:info@youbeautylab.it?subject=${subject}&body=${body}`;
             }}
             className="rounded-3xl bg-card border border-border/60 p-7 md:p-10 space-y-5"
           >
@@ -98,7 +98,7 @@ function ContattiPage() {
           <div className="mx-auto max-w-7xl px-6 md:px-10">
             <div className="overflow-hidden rounded-3xl border border-border/60 bg-card">
               <iframe
-                title="Mappa Beauty Center Giulia"
+                title="Mappa You Beauty Lab"
                 src={MAPS_EMBED}
                 width="100%"
                 height="420"
