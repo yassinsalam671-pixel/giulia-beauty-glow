@@ -42,10 +42,10 @@ function ContattiPage() {
               </a>
             </ContactRow>
             <ContactRow icon={Phone} title="Telefono">
-              <a href="tel:+390301234567" className="hover:text-[var(--rose-deep)]">+39 030 123 4567</a>
+              <a href="tel:+393913985198" className="hover:text-[var(--rose-deep)]">+39 391 398 5198</a>
             </ContactRow>
             <ContactRow icon={Mail} title="Email">
-              <a href="mailto:info@beautycentergiulia.it" className="hover:text-[var(--rose-deep)]">info@beautycentergiulia.it</a>
+              <a href="mailto:info@youbeautylab.it" className="hover:text-[var(--rose-deep)]">info@youbeautylab.it</a>
             </ContactRow>
             <ContactRow icon={Clock} title="Orari">
               Mar – Ven: 9.30 – 19.30
@@ -55,7 +55,7 @@ function ContattiPage() {
               Dom & Lun: chiuso
             </ContactRow>
             <ContactRow icon={Instagram} title="Seguici">
-              <a href="#" className="hover:text-[var(--rose-deep)]">@beautycenter.giulia</a>
+              <a href="https://instagram.com" target="_blank" rel="noreferrer" className="hover:text-[var(--rose-deep)]">@youbeautylab</a>
             </ContactRow>
           </div>
         </Reveal>
