@@ -69,7 +69,7 @@ function ContattiPage() {
               const body = encodeURIComponent(
                 `Nome: ${data.get("name")}\nTelefono: ${data.get("phone")}\nTrattamento: ${data.get("service")}\n\nMessaggio:\n${data.get("message")}`,
               );
-              window.location.href = `mailto:info@beautycentergiulia.it?subject=${subject}&body=${body}`;
+              window.location.href = `mailto:info@youbeautylab.it?subject=${subject}&body=${body}`;
             }}
             className="rounded-3xl bg-card border border-border/60 p-7 md:p-10 space-y-5"
           >
