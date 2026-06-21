@@ -5,9 +5,9 @@ import { Reveal } from "@/components/Reveal";
 export const Route = createFileRoute("/chi-siamo")({
   head: () => ({
     meta: [
-      { title: "Chi siamo — Beauty Center Giulia Brescia" },
-      { name: "description", content: "Scopri Giulia e la filosofia del Beauty Center: cura, ascolto e bellezza autentica nel centro di Brescia." },
-      { property: "og:title", content: "Chi siamo — Beauty Center Giulia" },
+      { title: "Chi siamo — You Beauty Lab Brescia" },
+      { name: "description", content: "Scopri You Beauty Lab: un laboratorio di bellezza accogliente e professionale nel cuore di Brescia." },
+      { property: "og:title", content: "Chi siamo — You Beauty Lab" },
       { property: "og:description", content: "La nostra storia e filosofia, nel cuore di Brescia." },
       { property: "og:image", content: aboutImg },
     ],
@@ -21,33 +21,33 @@ function ChiSiamoPage() {
       <section className="mx-auto max-w-7xl px-6 md:px-10 pt-10 md:pt-16 pb-20 grid gap-12 md:grid-cols-2 md:items-center">
         <Reveal>
           <div>
-            <span className="ornament-line ornament-line-before">La nostra storia</span>
+            <span className="ornament-line ornament-line-before">Chi siamo</span>
             <h1 className="mt-4 font-display text-5xl md:text-6xl">
               Bellezza che <em className="italic text-[var(--rose-deep)]">ascolta.</em>
             </h1>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              Il Beauty Center Giulia nasce nel 2014 dal desiderio di creare un
-              luogo intimo dove le donne possano sentirsi davvero accolte. Niente
-              fretta, niente pacchetti standard: solo trattamenti pensati per la
-              tua pelle e per il tuo momento.
+              You Beauty Lab è un centro estetico nato a Brescia con un'idea
+              semplice: trasformare ogni trattamento in un momento davvero tuo.
+              Un'atmosfera accogliente, riservata e professionale, dove sentirsi
+              a casa fin dal primo istante.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              Giulia, fondatrice ed estetista qualificata, si forma costantemente
-              presso le migliori scuole italiane di estetica per offrirti tecniche
-              all'avanguardia con un tocco artigianale e umano.
+              Il nostro team di estetiste qualificate si forma costantemente sulle
+              più moderne tecniche di estetica, unendo cura artigianale, prodotti
+              di alta qualità e un ascolto attento per ogni cliente.
             </p>
           </div>
         </Reveal>
         <Reveal delay={120}>
           <div className="relative">
             <div className="overflow-hidden rounded-3xl">
-              <img src={aboutImg} alt="Giulia, fondatrice del centro estetico" loading="lazy" className="aspect-[4/5] w-full object-cover" />
+              <img src={aboutImg} alt="Interno di You Beauty Lab" loading="lazy" className="aspect-[4/5] w-full object-cover" />
             </div>
             <div className="absolute -bottom-6 -left-6 hidden md:block bg-card border border-border rounded-2xl p-5 max-w-[220px] shadow-sm">
               <p className="font-display italic text-lg leading-snug">
                 "La cura è il nostro linguaggio."
               </p>
-              <p className="mt-2 text-xs uppercase tracking-[0.2em] text-[var(--rose-deep)]">— Giulia</p>
+              <p className="mt-2 text-xs uppercase tracking-[0.2em] text-[var(--rose-deep)]">— You Beauty Lab</p>
             </div>
           </div>
         </Reveal>
@@ -79,7 +79,7 @@ function ChiSiamoPage() {
       <section className="mx-auto max-w-3xl px-6 md:px-10 py-20 text-center">
         <Reveal>
           <p className="font-display italic text-3xl md:text-4xl leading-snug">
-            "Vogliamo che ogni donna esca dalla porta sentendosi un po' più
+            "Vogliamo che ogni persona esca dalla porta sentendosi un po' più
             sé stessa di quando è entrata."
           </p>
         </Reveal>
