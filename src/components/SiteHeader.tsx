@@ -31,10 +31,10 @@ export function SiteHeader() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-5 py-4 md:px-10 md:py-5">
         <Link to="/" className="flex items-baseline gap-2 group">
           <span className="font-display text-2xl md:text-[28px] tracking-tight text-foreground">
-            Beauty Center
+            You Beauty
           </span>
           <span className="font-display italic text-[var(--rose-deep)] text-xl md:text-2xl">
-            Giulia
+            Lab
           </span>
         </Link>
 
