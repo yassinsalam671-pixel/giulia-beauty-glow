@@ -98,7 +98,7 @@ function ContattiPage() {
           <div className="mx-auto max-w-7xl px-6 md:px-10">
             <div className="overflow-hidden rounded-3xl border border-border/60 bg-card">
               <iframe
-                title="Mappa Beauty Center Giulia"
+                title="Mappa You Beauty Lab"
                 src={MAPS_EMBED}
                 width="100%"
                 height="420"
